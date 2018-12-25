@@ -1,0 +1,10 @@
+---
+applications:
+- name: spring-rest-demo
+  memory: 768M
+  instances: 1
+  path: ../target/spring-rest-demo-1.0.jar
+routes:
+  - route: testvamc-demo-app.cfapps.io
+services:
+   - mysqldb
